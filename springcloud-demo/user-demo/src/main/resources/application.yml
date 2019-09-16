@@ -1,0 +1,21 @@
+server:
+  port: 8825
+spring:
+  application:
+    name: yidiankt-user
+#  boot:
+#    admin:
+#      client:
+#        url: http://210.32.1.66:8769
+eureka:
+  client:
+    service-url:
+      defaultZone: http://210.32.1.66:8888/eureka/
+  instance:
+    instance-id: stacks-1   #自定义服务名称信息 Eureka页面中Status的名字
+    prefer-ip-address: true     #访问路径可以显示IP地址（鼠标移动到名字上）
+info:
+  app.name: atguigu-microservicecloud
+  company.name: www.atguigu.com
+  build.artifactId: @project.artifactId@
+  build.version: @project.version@
