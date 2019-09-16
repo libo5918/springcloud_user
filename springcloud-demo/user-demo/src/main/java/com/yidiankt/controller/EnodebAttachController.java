@@ -65,6 +65,7 @@ public class EnodebAttachController {
         EnodebTauResp enodebTauResp = GenEnodebBean.getTau();
         String result = gson.toJson(enodebTauResp);
         System.out.println("result = " + result);
+        System.out.println(1/0);
         Thread.sleep(1000);
         return result;
     }
